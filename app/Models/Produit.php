@@ -24,17 +24,9 @@ class Produit extends Model
         return $this->hasMany(LigneCommande::class);
     }
 
-/*************  ✨ Windsurf Command 🌟  *************/
-    /**
-     * The ratings that belong to the Produit
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\MorphMany
-     */
-    // public function ratings(): MorphMany
     // public function ratings()
     // {
     //     return $this->morphMany(Rating::class, 'cible');
-    // }
-/*******  f2af28be-ecf3-4c66-9473-478a43088e09  *******/
+    // } 
 }
 
