@@ -10,13 +10,14 @@ class CategorieController extends Controller
 
     public function index()
     {
-        $categorie = Categorie::latest()->paginate(10);
-        return view('categorie.index', compact('categorie'));
+        $categories = Categorie::latest()->paginate(10);
+        return view('categorie.index', compact('categories'));
     }
 
     public function create()
     {
         return view('categorie.create');
+        
     }
 
     public function store(Request $request)
@@ -39,6 +40,8 @@ class CategorieController extends Controller
     public function edit(Categorie $categorie)
     {
         return view('categorie.edit', compact('categorie'));
+
+        
     }
 
 

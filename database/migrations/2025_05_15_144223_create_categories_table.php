@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
               $table->string('nom');
             $table->string('description');
+               $table->timestamps(); // ajoute la colonne created_at et updated_at 
         });
     }
 
-    
+
 
     /**
      * Reverse the migrations.
